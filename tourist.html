@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Website</title>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('img1.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #f93e05;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.btn {
+    background-color: #f15b2a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d54721;
+}
+
+/* Style the featured destinations section using Flexbox */
+.featured-destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.destination {
+    flex-basis: calc(33.33% - 20px);
+}
+
+.destination img {
+    max-width: 75%;
+    height: fit-content;
+    border: 2px solid #f15b2a;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Beautiful Destinations</h1>
+            <p>Explore the world with us and make unforgettable memories.</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="featured-destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination">
+            <img src="img2.png" alt="Destination 1">
+            <h3>Greece</h3>
+        </div>
+        <div class="destination">
+            <img src="img3.png" alt="Destination 2">
+            <h3>Brazil</h3>
+        </div>
+        <div class="destination">
+            <img src="destination3.jpg" alt="Destination 3">
+            <h3>Tokyo, Japan</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tourist Website</p>
+    </footer>
+</body>
+</html>
